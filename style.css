@@ -1,0 +1,207 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #fff0f5, #f9f9ff);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, #ffdee9, #b5fffc);
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 2px solid #e0e0e0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #b30059;
+  text-shadow: 2px 2px 8px rgba(179, 0, 89, 0.2);
+  letter-spacing: 2px;
+}
+
+header p {
+  font-size: 1.3rem;
+  color: #444;
+  font-style: italic;
+}
+
+/* SEARCH BAR */
+.search-bar {
+  margin-top: 15px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 55%;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.search-bar input:focus {
+  border-color: #b30059;
+  box-shadow: 0 0 8px #ff80ab;
+}
+
+.search-bar button {
+  padding: 10px 16px;
+  margin-left: 8px;
+  background: linear-gradient(135deg, #b30059, #ff4081);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-bar button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #ff4081, #b30059);
+}
+
+/* MAIN CONTENT */
+main {
+  padding: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.blog-post {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 25px;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.blog-post img {
+  width: 100%;
+  border-radius: 15px;
+  margin: 20px 0;
+  transition: transform 0.4s ease;
+}
+
+.blog-post img:hover {
+  transform: scale(1.05);
+}
+
+.meta {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+/* INTERACTIONS */
+.interactions button {
+  margin-right: 12px;
+  padding: 10px 16px;
+  background: #ffe6f0;
+  border: 1px solid #b30059;
+  color: #b30059;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.interactions button:hover {
+  background: #b30059;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* COMMENTS */
+.comments {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+.comment-box input {
+  width: 75%;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+.comment-box input:focus {
+  border-color: #b30059;
+  box-shadow: 0 0 6px #ff99cc;
+}
+
+.comment-box button {
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #b30059, #ff4081);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: 0.3s;
+}
+
+.comment-box button:hover {
+  background: linear-gradient(135deg, #ff4081, #b30059);
+  transform: scale(1.05);
+}
+
+.comment-list p {
+  background: #fce4ec;
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 12px;
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* MORE POSTS */
+.more-posts ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.more-posts li {
+  margin: 12px 0;
+}
+
+.more-posts a {
+  text-decoration: none;
+  color: #b30059;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.more-posts a:hover {
+  color: #ff4081;
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #ffdee9, #b5fffc);
+  color: #444;
+  border-top: 2px solid #e0e0e0;
+  font-size: 0.95rem;
+  position: relative;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
